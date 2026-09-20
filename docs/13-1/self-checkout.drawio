@@ -19,8 +19,8 @@
             <mxPoint x="455" y="460" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="0lfnFeqz2etCSO2WgXl3-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Actor" vertex="1">
-          <mxGeometry height="60" width="30" x="80" y="270" as="geometry" />
+        <mxCell id="0lfnFeqz2etCSO2WgXl3-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="お客さん" vertex="1">
+          <mxGeometry height="55" width="30" x="80" y="270" as="geometry" />
         </mxCell>
         <mxCell id="0lfnFeqz2etCSO2WgXl3-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="支払う" vertex="1">
           <mxGeometry height="80" width="300" x="350" y="370" as="geometry" />
