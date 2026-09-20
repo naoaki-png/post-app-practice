@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="ページ-1" id="A2rsM-Kz4ZJr-woCx5YL">
+    <mxGraphModel dx="1761" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2By7gr1PUNRsVViLFzEt-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" value="カフェのモバイルオーダーアプリ" vertex="1">
+          <mxGeometry height="860" width="250" x="280" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2By7gr1PUNRsVViLFzEt-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="ユーザー登録" vertex="1">
+          <mxGeometry height="80" width="220" x="295" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2By7gr1PUNRsVViLFzEt-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="注文履歴" vertex="1">
+          <mxGeometry height="80" width="220" x="295" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="2By7gr1PUNRsVViLFzEt-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="注文取消し" vertex="1">
+          <mxGeometry height="80" width="220" x="295" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="2By7gr1PUNRsVViLFzEt-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="ドリンク・フード注文" vertex="1">
+          <mxGeometry height="80" width="220" x="295" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="2By7gr1PUNRsVViLFzEt-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="ログアウト" vertex="1">
+          <mxGeometry height="80" width="220" x="295" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="2By7gr1PUNRsVViLFzEt-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ログイン&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="220" x="295" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="2By7gr1PUNRsVViLFzEt-8" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="ドリンク・フード一覧" vertex="1">
+          <mxGeometry height="80" width="220" x="295" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="2By7gr1PUNRsVViLFzEt-9" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="注文確認" vertex="1">
+          <mxGeometry height="80" width="220" x="295" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="2By7gr1PUNRsVViLFzEt-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="支払い" vertex="1">
+          <mxGeometry height="80" width="220" x="295" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="2By7gr1PUNRsVViLFzEt-11" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="お客様" vertex="1">
+          <mxGeometry height="60" width="30" x="-110" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="2By7gr1PUNRsVViLFzEt-12" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="店員" vertex="1">
+          <mxGeometry height="60" width="30" x="680" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="2By7gr1PUNRsVViLFzEt-13" edge="1" parent="1" source="2By7gr1PUNRsVViLFzEt-11" style="endArrow=none;html=1;rounded=0;" target="2By7gr1PUNRsVViLFzEt-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="40" y="635" as="sourcePoint" />
+            <mxPoint x="90" y="585" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2By7gr1PUNRsVViLFzEt-14" edge="1" parent="1" source="2By7gr1PUNRsVViLFzEt-6" style="endArrow=none;html=1;rounded=0;" target="2By7gr1PUNRsVViLFzEt-11" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="110" y="700" as="sourcePoint" />
+            <mxPoint x="160" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2By7gr1PUNRsVViLFzEt-15" edge="1" parent="1" source="2By7gr1PUNRsVViLFzEt-11" style="endArrow=none;html=1;rounded=0;" target="2By7gr1PUNRsVViLFzEt-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="140" y="590" as="sourcePoint" />
+            <mxPoint x="190" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2By7gr1PUNRsVViLFzEt-17" edge="1" parent="1" source="2By7gr1PUNRsVViLFzEt-11" style="endArrow=none;html=1;rounded=0;" target="2By7gr1PUNRsVViLFzEt-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="80" y="840" as="sourcePoint" />
+            <mxPoint x="130" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2By7gr1PUNRsVViLFzEt-18" edge="1" parent="1" source="2By7gr1PUNRsVViLFzEt-11" style="endArrow=none;html=1;rounded=0;" target="2By7gr1PUNRsVViLFzEt-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="180" y="450" as="sourcePoint" />
+            <mxPoint x="230" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2By7gr1PUNRsVViLFzEt-19" edge="1" parent="1" source="2By7gr1PUNRsVViLFzEt-11" style="endArrow=none;html=1;rounded=0;" target="2By7gr1PUNRsVViLFzEt-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="170" y="850" as="sourcePoint" />
+            <mxPoint x="220" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2By7gr1PUNRsVViLFzEt-21" edge="1" parent="1" source="2By7gr1PUNRsVViLFzEt-11" style="endArrow=none;html=1;rounded=0;" target="2By7gr1PUNRsVViLFzEt-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="160" y="820" as="sourcePoint" />
+            <mxPoint x="210" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2By7gr1PUNRsVViLFzEt-23" edge="1" parent="1" source="2By7gr1PUNRsVViLFzEt-3" style="endArrow=none;html=1;rounded=0;" target="2By7gr1PUNRsVViLFzEt-12" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="240" y="680" as="sourcePoint" />
+            <mxPoint x="290" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2By7gr1PUNRsVViLFzEt-24" edge="1" parent="1" source="2By7gr1PUNRsVViLFzEt-11" style="endArrow=none;html=1;rounded=0;" target="2By7gr1PUNRsVViLFzEt-9" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="240" y="680" as="sourcePoint" />
+            <mxPoint x="290" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
