@@ -28,6 +28,8 @@
         .btn-secondary:hover { background: #F7F8F9; }
         .btn:focus-visible { outline: 2px solid #E8792B; outline-offset: 2px; }
         .error { color: #D6402C; font-size: 0.83rem; margin-top: 0.3rem; }
+        .counter { color: #5B6570; font-size: 0.83rem; margin-top: 0.3rem; text-align: right; }
+        .counter.over { color: #D6402C; font-weight: 700; }
     </style>
 </head>
 <body>
@@ -67,6 +69,7 @@
                 <div class="form-group">
                     <label for="content">本文</label>
                     <textarea id="content" name="content" required>{{ old('content', $post->content) }}</textarea>
+                    <p class="counter" id="content-counter">残り <span id="content-remaining">140</span> 字</p>
                     @error('content')
                         <p class="error">{{ $message }}</p>
                     @enderror
@@ -79,5 +82,25 @@
             </form>
         </main>
     </div>
+
+    <script>
+        const MAX_LENGTH = 140; // PostController::update の max:140 と同じ値にする
+        const textarea = document.getElementById('content');
+        const counter = document.getElementById('content-counter');
+        const remaining = document.getElementById('content-remaining');
+
+        function updateCounter() {
+            // ブラウザは送信時に改行を CRLF(2文字)にするので、サーバーの数え方に合わせて改行は2文字として数える。
+            // [...文字列] で数えるのは、絵文字などを1文字として扱うため。
+            const length = [...textarea.value.replace(/\r?\n/g, '\r\n')].length;
+            const left = MAX_LENGTH - length;
+
+            remaining.textContent = left;
+            counter.classList.toggle('over', left < 0);
+        }
+
+        textarea.addEventListener('input', updateCounter);
+        updateCounter(); // 開いた時点の本文にも反映する
+    </script>
 </body>
 </html>

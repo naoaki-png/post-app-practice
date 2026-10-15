@@ -56,6 +56,15 @@ class PostContentLimitTest extends TestCase
         $this->assertSame('もとの本文', $this->post->fresh()->content);
     }
 
+    public function test_編集画面に残り文字数の表示がある(): void
+    {
+        $this->actingAs($this->user)
+            ->get(route('posts.edit', $this->post))
+            ->assertOk()
+            ->assertSee('id="content-counter"', false)
+            ->assertSee('const MAX_LENGTH = 140;', false);
+    }
+
     public function test_本文が空ならエラーになる(): void
     {
         $this->update('')
